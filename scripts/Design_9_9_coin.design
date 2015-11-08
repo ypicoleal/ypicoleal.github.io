@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortotype comment="false" x="30" y="20">
+            <group eventID="1" id="-1">
+                <die comment="false" x="41" y="52">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <repeat comment="false" x="41" y="79">
+                    <group eventID="1" id="-1"/>
+                    <int id="0" val="1"/>
+                </repeat>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE eid="4" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

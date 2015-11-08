@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="78"/>
+                    </group>
+                    <as-boolean comment="false" id="0" x="0" y="0">
+                        <actor-get-prop comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Is Slope Sliding?"/>
+                        </actor-get-prop>
+                    </as-boolean>
+                </if>
+                <if comment="false" x="26" y="110">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="158">
+                            <group eventID="-1" id="-1">
+                                <set-dxy comment="false" x="48" y="196">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <times comment="false" id="2" x="0" y="0">
+                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                        </get-dxy>
+                                        <get-val-3-3 comment="false" id="1" x="0" y="0"/>
+                                    </times>
+                                </set-dxy>
+                            </group>
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <actor-get-prop comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="On Ground?"/>
+                                </actor-get-prop>
+                            </as-boolean>
+                        </if>
+                        <else comment="false" x="37" y="253">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="273">
+                                    <group eventID="-1" id="-1">
+                                        <set-dxy comment="false" x="59" y="311">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <times comment="false" id="2" x="0" y="0">
+                                                <get-dxy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-dxy>
+                                                <get-val-3-7 comment="false" id="1" x="0" y="0"/>
+                                            </times>
+                                        </set-dxy>
+                                    </group>
+                                    <as-boolean comment="false" id="0" x="0" y="0">
+                                        <actor-get-prop comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="Is Underwater?"/>
+                                        </actor-get-prop>
+                                    </as-boolean>
+                                </if>
+                                <else comment="false" x="48" y="368">
+                                    <group eventID="-1" id="-1">
+                                        <set-dxy comment="false" x="59" y="388">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <times comment="false" id="2" x="0" y="0">
+                                                <get-dxy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-dxy>
+                                                <get-val-3-4 comment="false" id="1" x="0" y="0"/>
+                                            </times>
+                                        </set-dxy>
+                                    </group>
+                                </else>
+                            </group>
+                        </else>
+                        <stop comment="false" x="37" y="457"/>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-3-1 comment="false" id="1" x="0" y="0"/>
+                            </keystate>
+                        </not>
+                        <not comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-3-2 comment="false" id="1" x="0" y="0"/>
+                            </keystate>
+                        </not>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="489">
+                    <group eventID="-1" id="-1">
+                        <set-dxy comment="false" x="37" y="532">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <times comment="false" id="2" x="0" y="0">
+                                <get-dxy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-dxy>
+                                <get-val-3-5 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                        </set-dxy>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <as-boolean comment="false" id="0" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="Is Ducking?"/>
+                            </actor-get-prop>
+                        </as-boolean>
+                        <as-boolean comment="false" id="1" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="On Ground?"/>
+                            </actor-get-prop>
+                        </as-boolean>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="589">
+                    <group eventID="-1" id="-1">
+                        <set-dxy comment="false" x="37" y="632">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <times comment="false" id="2" x="0" y="0">
+                                <get-dxy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-dxy>
+                                <get-val-3-6 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                        </set-dxy>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <as-boolean comment="false" id="0" x="0" y="0">
+                            <actor-get-prop comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="On Ground?"/>
+                            </actor-get-prop>
+                        </as-boolean>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
