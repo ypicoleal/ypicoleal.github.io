@@ -91,6 +91,15 @@ if(wrapper.enabled && sameAsAny(getActorType(6), event.otherActor.getType(),even
 }
 });
     
+/* =========================== Keyboard =========================== */
+addKeyStateListener("up", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled && pressed)
+{
+        playSound(getSound(20));
+}
+});
+    
 /* ======================== Specific Actor ======================== */
 addWhenKilledListener(actor, function(list:Array<Dynamic>):Void
 {
