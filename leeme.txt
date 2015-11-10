@@ -1,0 +1,7 @@
+Para ejecutar el juego abra el archivo index.html en su nagevagador de internet
+
+los controles del juego son:
+
+-flecha arriba para saltar
+-flecha izquierda para moverse a la izquierda
+-flecha derecha para moverse a la derecha
